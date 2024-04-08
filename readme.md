@@ -2,11 +2,19 @@
 
 A tool for planning crop schedules in the Stardew Valley game.
 
-#### **<a href="http://exnil.github.io/crop_planner/">Live version on github.io</a>**
+Originally created by exnil.
+
+#### **<a href="http://nmanzi.github.io/crop_planner/">Live version on github.io</a>**
 
 <a href="https://www.reddit.com/r/StardewValley/comments/55puw1/crop_planner_v2_released_multiple_years_importing/" target="_blank">Reddit thread</a>
 
 ---
+
+### New since v2
+
+* Supports new crops from v1.6 (thanks JeffreyBytes)
+* Supports seasonal seeds (thanks K-Fitzpatrick)
+* Mark seeds as "free" to track crops where the seeds were received free
 
 ### New in v2
 
