@@ -1193,9 +1193,6 @@ function planner_controller($scope){
 		// Check that crop can grow
 		var crop = planner.crops[newplan.crop_id];
 		if (!crop || !crop.can_grow(date, false, planner.in_greenhouse())) return false;
-
-		// If seeds are free then drop the cost
-		if (newplan.freeseeds) crop.buy = 0;
 		newplan.crop = crop;
 		
 		// Amount to plant
@@ -1474,7 +1471,7 @@ function planner_controller($scope){
 	Plan.prototype.get_cost = function(locale){
 		// If seeds are free, then return 0.
 		if (this.freeseeds) return 0;
-		
+
 		var amount = this.crop.buy * this.amount;
 		if (locale) return amount.toLocaleString();
 		return amount;
