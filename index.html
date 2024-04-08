@@ -395,10 +395,16 @@
 									ng-options="crop.id as crop.name for crop in self.crops_list | filter:self.planner_valid_crops">
 								</select>
 							</div>
-							<div class="col-md-2 col-xs-4">
+							<div class="col-md-1 col-xs-4">
 								<label>
 									<b>Amount</b><br>
 									<input class="form-control" type="text" ng-model="self.newplan.amount" ng-keypress="self.add_plan_key(self.cdate, $event)">
+								</label>
+							</div>
+							<div class="col-md-1 col-xs-2">
+								<label>
+									<b>Free</b><br>
+									<input class="form-control" style="height: 25px; border: 0;" type="checkbox" ng-model="self.newplan.freeseeds" ng-keypress="self.add_plan_key(self.cdate, $event)">
 								</label>
 							</div>
 							<div class="col-md-3 col-xs-4">
